@@ -11,9 +11,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
 
-    List<String> items = ['Text','Divider','Colors','Button','App Bar','Silver App Bar','Scrollview','Floating Action button',
+    List<String> items = ['Text','Divider','Colors','Button','App Bar','Sliver App Bar','Scrollview','Floating Action button',
     'Image','Loading Screen','Transactions','Image slide','Card View','Table','Hero','Tooltip','Opacity','Background Color',
-    'Intent with arguments'];
+    'Intent with arguments','Tab layout','Side navigation layout','Inputs'];
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
@@ -48,6 +48,18 @@ class _HomeState extends State<Home> {
                         break;
                       case 1:
                         Navigator.pushNamed(context, '/divider');
+                        break;
+                      case 2:
+                        Navigator.pushNamed(context, '/color');
+                        break;
+                      case 3:
+                        Navigator.pushNamed(context, '/button');
+                        break;
+                      case 4:
+                        Navigator.pushNamed(context, '/bars');
+                        break;
+                      case 5:
+                        Navigator.pushNamed(context, '/silver');
                         break;
                     }
                   },
