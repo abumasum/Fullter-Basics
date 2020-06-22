@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class LoadingScreenClass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('SLoading Screen',
-            style: TextStyle(
-                color: Colors.amber
-            )
+      backgroundColor: Colors.blue,
+      body: Center(
+        child: SpinKitFadingCube(
+          color: Colors.white,
+          size: 50.0,
         ),
-        centerTitle: true,
       ),
     );
   }

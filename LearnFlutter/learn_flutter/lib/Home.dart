@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     List<String> items = ['Text','Divider','Colors','Button','App Bar','Sliver App Bar','Scrollview','Floating Action button',
-    'Image','Loading Screen','Transactions','Image slide','Card View','Table','Hero','Tooltip','Opacity','Background Color',
+    'Image','Loading Screen','Transitions','Image slide','Card View','Table','Hero','Tooltip','Opacity','Background Color',
     'Intent with arguments','Tab layout','Side navigation layout','Inputs'];
     return Scaffold(
       body: NestedScrollView(
@@ -29,8 +29,8 @@ class _HomeState extends State<Home> {
                         color: Colors.white,
                         fontSize: 16.0,
                       )),
-                  background: Image.network(
-                    "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&h=350",
+                  background: Image.asset(
+                   'images/flutterimg.png',
                     fit: BoxFit.cover,
                   )),
             ),
@@ -60,6 +60,21 @@ class _HomeState extends State<Home> {
                         break;
                       case 5:
                         Navigator.pushNamed(context, '/silver');
+                        break;
+                      case 6:
+                        Navigator.pushNamed(context, '/scroll');
+                        break;
+                      case 7:
+                        Navigator.pushNamed(context, '/floating');
+                        break;
+                      case 8:
+                        Navigator.pushNamed(context, '/image');
+                        break;
+                      case 9:
+                        Navigator.pushNamed(context, '/loading');
+                        break;
+                      case 10:
+                        Navigator.pushNamed(context, '/transactions');
                         break;
                     }
                   },

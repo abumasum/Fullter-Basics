@@ -36,7 +36,7 @@ void main() {
       '/bars':(context) => Bars(),
       '/silver':(context) => SilverAppBar(),
       '/scroll':(context) => ScrollViewClass(),
-      '/floating':(context) => FloatingAction(),
+      '/floating':(context) => FloatingClass(),
       '/image':(context) => ImageClass(),
       '/cards':(context) => Cards(),
       '/loading':(context) => LoadingScreenClass(),
